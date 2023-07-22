@@ -1,0 +1,309 @@
+/* global stule */
+
+@font-face {
+    font-family: "Lato";
+    src: url(./Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Rufina";
+    src: url(./Rufina/Rufina-Bold.ttf);
+    font-weight: bold;
+
+}
+
+body {
+    margin: 0;
+}
+
+.btn {
+    font-family: "Rufina";
+    height: 4rem;
+    font-size: 1.5rem;
+    color: white;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    border: 2px solid white;
+    cursor: pointer;
+
+}
+
+.btn.clear {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+/* header */
+
+.page-header {
+    background-image: url(menu-header.png);
+    padding: 1rem 5rem 8rem 5rem;
+    color: white;
+    background-size: cover;
+}
+
+/* navbar */
+
+.page-header .navbar,
+.navbar .left,
+.navbar .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+.navbar .nav-menu {
+    width: 3rem;
+    height: auto;
+}
+
+.navbar .left {
+    width: 20%;
+    margin-top: 3rem;
+}
+
+.navbar .logo {
+    height: 5rem;
+}
+
+.navbar .right {
+    width: 35%;
+    margin-top: 2rem;
+}
+
+.navbar .right .phone {
+    font-family: "lato";
+    font-size: 1.2rem;
+
+}
+
+/* hero container */
+.hero-container {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+    padding-left: 2rem;
+
+}
+
+.title {
+    font-family: "Rufina";
+    font-size: 5rem;
+    width: 70%;
+    line-height: 8rem;
+
+
+}
+
+.subtitle {
+    font-family: "Rufina";
+    font-size: 1.7rem;
+    margin-top: -2rem;
+}
+
+/* sections */
+
+.section-heading-container {
+    text-align: center;
+    padding-top: 2rem;
+
+}
+
+.section-heading-container .section-title {
+    font-family: "Rufina";
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+
+
+}
+
+.section-heading-container .section-subtitle {
+    font-family: "Lato";
+    font-size: 1.1rem;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 8remm 3rem 8rem;
+
+}
+
+.menu-container .menu-img {
+    width: 50%;
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+.menu-container .menu-options {
+    width: 50%;
+    padding: 5rem 2rem 5rem 2rem;
+}
+
+/* menu item styles */
+
+.menu-container .menu-item>p {
+    font-size: 2.5rem;
+    font-family: "Rufina";
+    text-align: right;
+    margin-bottom: 0.5rem;
+}
+
+.menu-container .menu-item .item-info {
+    border-top: 4px dotted #000;
+    padding-bottom: 0.5rem;
+
+}
+
+.menu-container .menu-item .item-info h3 {
+    font-size: 2.6rem;
+    font-family: "Rufina";
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.item-info p {
+    font-family: "Lato";
+    font-size: 1.2rem;
+}
+
+/* reservation styles*/
+
+.reservation-container {
+    background-color: #EBF0E4;
+    padding: 12rem 8rem;
+    text-align: center;
+    /*for buttons*/
+
+}
+
+.reservation-container .section-title {
+    margin-top: 0rem;
+
+}
+
+.scheduling-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+
+.scheduling-container input,
+.scheduling-container select {
+    width: 28%;
+    height: 5rem;
+    border: 2px solid black;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #EBF0E4;
+    font-size: 1.5rem;
+    font-family: "Lato";
+    box-sizing: border-box;
+}
+
+/* #reservation-guests {
+    height: 5.2rem;
+} */
+
+/* button */
+
+.btn.primary {
+    background-color: #233000;
+    border: 2px solid black;
+
+}
+
+.reservation-container .btn.btn.primary {
+    margin-top: 6rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+
+}
+
+/* footer styling */
+
+footer {
+    background-color: #233000;
+    color: white;
+    margin-top: -2rem;
+
+}
+
+.contact-container {
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.contact-container .left,
+.contact-container .middle {
+    width: 15%;
+
+}
+
+.contact-container .right {
+    width: 50%;
+}
+
+.left .footer-title {
+    font-family: "Rufina";
+    font-size: 3.5rem;
+}
+
+.contact-container .footer-subtitle {
+    font-family: "Rufina";
+    font-size: 1.8rem;
+}
+
+.contact-container .middle p {
+    font-family: "Lato";
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+
+.contact-container .newsletter-container input {
+    width: 50%;
+    height: 4rem;
+    border: 2px solid white;
+    background-color: #233000;
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.btn.secondary {
+    border: none;
+    background-color: #5E6600;
+    font-size: 1.5rem;
+}
+
+.newsletter-info {
+    font-family: "Lato";
+    font-size: 0.8rem;
+}
+
+/* copyright styeling */
+
+.copyright-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem 8rem 5rem 8rem;
+    border-top: 2px dotted white;
+    font-family: "Lato";
+    font-size: 1.2rem;
+}
+
+.socials-container {
+    width: 12rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}

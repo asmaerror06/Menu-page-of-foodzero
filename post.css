@@ -1,0 +1,596 @@
+/* global stule */
+
+@font-face {
+    font-family: "Lato";
+    src: url(./Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(./Lato/Lato-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Rufina";
+    src: url(./Rufina/Rufina-Bold.ttf);
+    font-weight: bold;
+
+}
+
+body {
+    margin: 0;
+}
+
+.btn {
+    font-family: "Rufina";
+    height: 4rem;
+    font-size: 1.5rem;
+    color: white;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    border: 2px solid white;
+    cursor: pointer;
+
+}
+
+.btn.clear {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+
+
+/* header */
+
+
+.page-header {
+    background-image: url("menu-header.png");
+    padding: 1rem 5rem 8rem 5rem;
+    color: white;
+    background-size: cover;
+}
+
+/* navbar */
+
+.page-header .navbar,
+.navbar .left,
+.navbar .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+.navbar .nav-menu {
+    width: 3rem;
+    height: auto;
+}
+
+.navbar .left {
+    width: 20%;
+    margin-top: 3rem;
+}
+
+.navbar .logo {
+    height: 5rem;
+}
+
+.navbar .right {
+    width: 35%;
+    margin-top: 2rem;
+}
+
+.navbar .right .phone {
+    font-family: "lato";
+    font-size: 1.2rem;
+
+}
+
+/* hero container */
+
+.hero-container {
+    padding: 6rem 14rem 4rem;
+
+}
+
+.btn.tag {
+    font-size: 1.2rem;
+    height: 3rem;
+
+}
+
+.hero-container .title {
+    font-size: 4rem;
+    font-family: "Rufina";
+    margin-bottom: 2rem;
+}
+
+.hero-container .post-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Lato";
+}
+
+.hero-container .post-info img {
+    height: 5rem;
+    margin-right: 1rem;
+}
+
+.hero-container .post-info .bullet {
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+}
+
+/* post content */
+#post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Lato";
+    font-size: 1.2rem;
+    padding: 6rem;
+
+}
+
+#post article {
+    width: 75%;
+}
+
+#post aside {
+    width: 20%;
+}
+
+#post p {
+    line-height: 1.7rem;
+
+}
+
+.breadcrumbs {
+    margin-bottom: 4rem;
+}
+
+.breadcrumbs a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.breadcrumbs a.active {
+    color: black;
+    cursor: pointer;
+
+}
+
+.breadcrumbs .divider {
+    color: lightgray;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+/* gallery */
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4rem;
+
+}
+
+.gallery .left {
+    width: 65%;
+}
+
+.gallery .left img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery .right {
+    width: 30%;
+}
+
+.gallery .right img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3.3rem;
+}
+
+#post blockquote {
+    color: #5E6600;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 2rem;
+    padding-right: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    line-height: 3rem;
+}
+
+/* tags */
+
+.article-tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+.article-tags .label {
+    font-family: "Rufina";
+    font-size: 1.8rem;
+    margin-right: 1rem;
+}
+
+.article-tags .tag,
+.tags-container .tag {
+    border: 1px solid black;
+    font-size: 0.8rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    line-height: 2rem;
+    margin-right: 0.5rem;
+}
+
+/* author info */
+
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.author img {
+    height: 12rem;
+    width: auto;
+}
+
+.author .author-info {
+    margin-left: 3rem;
+}
+
+.author .author .name {
+    font-family: "Rufina";
+    width: 55%;
+}
+
+/* sidebar */
+
+aside .search-container {
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+aside .search-container #search {
+    border: none;
+    font-size: 1.2rem;
+    font-family: "Lato";
+    width: 70%;
+}
+
+aside .search-container img {
+    height: 1.3rem;
+    width: auto;
+}
+
+/* categories or archeives styling */
+
+aside .side-container h4 {
+    font-family: "Rufina ";
+    font-size: 1.5rem;
+    border-bottom: 4px dotted black;
+    padding-top: 6.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.side-container .category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+}
+
+/* recent comments  */
+
+.side-container.comments .commenter {
+    font-size: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.comments .commenter .name {
+    color: lightgray;
+    margin-right: 0.4rem;
+}
+
+/* recently posted */
+
+.recent-posts .article-preview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.recent-posts .article-preview .thumbnail {
+    width: 5rem;
+    height: 5rem;
+}
+
+.recent-posts .article-preview .article-info {
+    width: 70%;
+
+}
+
+#post .article-preview .article-info .title {
+    font-family: "Rufina";
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    margin-left: 5px;
+
+}
+
+#post .article-preview .article-info span {
+    font-size: 0.7rem;
+    color: lightgray;
+    display: inline;
+    margin-left: 7px;
+}
+
+#post .article-info .bullet {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+/* tags */
+.tags-container .tag {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 2.8rem;
+}
+
+/* previous and next post styling */
+
+#prev-next {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+#prev-next .previous {
+    background-image: url("post-lemon-water.png");
+}
+
+#prev-next .next {
+    background-image: url("post-sparkling-wines.png");
+
+}
+
+#prev-next .previous,
+#prev-next .next {
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    cursor: pointer;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    /* for prev-next images text overflow */
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
+
+#prev-next .helper-text {
+    font-family: "Lato";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#prev-next .helper-text img {
+    width: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+#prev-next .post-title {
+    font-family: "Rufina";
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+
+}
+
+/* post comments */
+#comments {
+    padding: 8rem 22rem 12rem 22rem;
+    font-family: "Lato";
+}
+
+#comments .comments-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Rufina";
+}
+
+.comment-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.comment-container img {
+    width: 5rem;
+    height: 5rem;
+    margin-top: -1rem;
+}
+
+.comment-info {
+    width: 85%;
+}
+
+.sub-comment {
+    padding-left: 6rem;
+}
+
+.comment-container .date {
+    color: lightgray;
+}
+
+.comment-container .last {
+    margin-bottom: 6rem;
+}
+
+/* reply new commnent  */
+
+#new-comment {
+    border-top: 4px dotted black;
+    margin-top: 6rem;
+}
+
+#new-comment .reply-title {
+    font-family: "Rufina";
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+#new-comment form textarea {
+    height: 20rem;
+}
+
+#new-comment form textarea,
+#new-comment form input[type="text"] {
+    width: 100%;
+    font-family: "Lato";
+    font-size: 1.5rem;
+    border: 2px solid black;
+}
+
+#new-comment form input [type="text"] {
+    height: 3.5rem;
+}
+
+#new-comment form .label {
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 0.8rem;
+}
+
+#new-comment button[type="submit"] {
+    border: 2px solid black;
+    font-family: "Rufina";
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    margin-top: 5rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+#new-comment button[type="submit"]:hover {
+    background-color: #233000;
+    color: white;
+}
+
+#new-comment button[type="submit"]:active {
+    border: none;
+}
+
+/* footer styling */
+
+footer {
+    background-color: #233000;
+    color: white;
+    margin-top: -2rem;
+
+}
+
+.contact-container {
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.contact-container .left,
+.contact-container .middle {
+    width: 15%;
+
+}
+
+.contact-container .right {
+    width: 50%;
+}
+
+.left .footer-title {
+    font-family: "Rufina";
+    font-size: 3.5rem;
+}
+
+.contact-container .footer-subtitle {
+    font-family: "Rufina";
+    font-size: 1.8rem;
+}
+
+.contact-container .middle p {
+    font-family: "Lato";
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+
+.contact-container .newsletter-container input {
+    width: 50%;
+    height: 4rem;
+    border: 2px solid white;
+    background-color: #233000;
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.btn.secondary {
+    border: none;
+    background-color: #5E6600;
+    font-size: 1.5rem;
+}
+
+.newsletter-info {
+    font-family: "Lato";
+    font-size: 0.8rem;
+}
+
+
+/* copyright styeling */
+
+.copyright-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem 8rem 5rem 8rem;
+    border-top: 2px dotted white;
+    font-family: "Lato";
+    font-size: 1.2rem;
+}
+
+.socials-container {
+    width: 12rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
